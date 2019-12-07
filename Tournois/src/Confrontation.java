@@ -65,8 +65,8 @@ public class Confrontation {
 	public void prettyPrintConfrontation() {
 		System.out.println("############################## Confrontation : "+ strat1.getNom() +" Contre " + strat2.getNom() +" :");
 		
-		String start = "                          ";
-		String space = "                        ";
+		String start = "                            ";
+		String space = "                          ";
 		System.out.print(start);
 		for(int i = 0; i<this.nbTours; i++) {
 			String beforeSpace = this.printSpaces(Math.max(0,((space.length()-Integer.toString((i+1)).length())/2)));

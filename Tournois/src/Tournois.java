@@ -74,8 +74,8 @@ public class Tournois {
 	public void prettyPrintScores() {
 		System.out.println("############################################################ Scores ############################################################");
 		
-		String start = "                              ";
-		String space = "                            ";
+		String start = "                                ";
+		String space = "                              ";
 		System.out.print(start);
 		Enumeration<String> keys = this.scores.keys();
 		while(keys.hasMoreElements()) {

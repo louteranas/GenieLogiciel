@@ -12,9 +12,9 @@ public class Game {
 		boolean verbose = false;
 		Tournois tournois = new Tournois(20);
 		tournois.addStrategy(strat2);
-		tournois.addStrategy(strat1);
+		tournois.addStrategy(strat6);
 		tournois.startTournois(verbose);
-		//tournois.prettyPrintScores();
+		tournois.prettyPrintScores();
 		
 		
     }

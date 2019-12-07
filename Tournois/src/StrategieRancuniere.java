@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class StrategieRancuniere extends Strategie{
 
 	public StrategieRancuniere() {
-		super("Stratégie Méfiante", "Je coopère la première partie, mais dès que mon adversaire trahit, je trahis toujours");
+		super("Stratégie Rancunière", "Je coopère la première partie, mais dès que mon adversaire trahit, je trahis toujours");
 		// TODO Auto-generated constructor stub
 	}
 

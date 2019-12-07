@@ -10,7 +10,7 @@ public class StrategieDonantDonant extends Strategie{
 	@Override
 	public String play(ArrayList<String> History, int nTours) {
 		if(nTours == 0) {
-			return "C";
+			return "T";
 		}
 		else {
 			return History.get(nTours-1);
