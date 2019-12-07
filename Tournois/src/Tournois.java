@@ -33,12 +33,12 @@ public class Tournois {
 		this.strategiesNames.add(strategy.getNom());
 	}
 	
-	public void startTournois(){
+	public void startTournois(boolean verbose){
 		for(int i = 0; i<this.strategies.size(); i++) {
 			Hashtable<String, Integer> confsScores = new Hashtable<String, Integer>();
 			for(int j = 0; j<this.strategies.size();j++) {
 				Confrontation conf = new Confrontation(this.strategies.get(i), this.strategies.get(j), this.nbTours);
-				int score = conf.play(false);
+				int score = conf.play(verbose);
 				confsScores.put(this.strategies.get(j).getNom(), score);
 			}
 			this.scores.put(this.strategies.get(i).getNom(), confsScores);

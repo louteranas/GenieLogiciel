@@ -11,7 +11,7 @@ public abstract class Strategie {
 		this.doc = doc;
 	}
 	
-	abstract public String play(ArrayList<String> History);
+	abstract public String play(ArrayList<String> History, int nTours);
 
 	public String getNom() {
 		return nom;
