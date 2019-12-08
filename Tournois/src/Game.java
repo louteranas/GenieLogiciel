@@ -11,7 +11,11 @@ public class Game {
 		StrategieDonantDonantDur strat6 = new StrategieDonantDonantDur();
 		boolean verbose = false;
 		Tournois tournois = new Tournois(20);
+		tournois.addStrategy(strat1);
 		tournois.addStrategy(strat2);
+		tournois.addStrategy(strat3);
+		tournois.addStrategy(strat4);
+		tournois.addStrategy(strat5);
 		tournois.addStrategy(strat6);
 		tournois.startTournois(verbose);
 		tournois.prettyPrintScores();
